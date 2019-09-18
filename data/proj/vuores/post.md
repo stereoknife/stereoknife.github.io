@@ -1,6 +1,7 @@
 ---
 image: "./thumb.png"
 links: "[app](#)[api](#)[cms](#)"
+date: 190900
 ---
 
 # Vuores AR Blog
