@@ -19,6 +19,14 @@ export default {
     cMidX: function () { return this.$refs.canvas.width * 0.5 },
     cMidY: function () { return this.$refs.canvas.height * 0.5 }
   },
+  methods: {
+    render () {
+      this.ctx.fillStyle = 'green';
+      this.ctx.fillRect(this.centerX(150), this.centerY(150), 150, 100);
+    },
+    centerX (width, center = this.cMidX) { return center - width * 0.5},
+    centerY (height, center = this.cMidY) { return center - height * 0.5}
+  },
   mounted () {
     const canvas = this.$refs.canvas
     this.ctx = canvas.getContext('2d')
