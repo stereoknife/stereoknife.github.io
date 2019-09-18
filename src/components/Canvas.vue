@@ -1,6 +1,5 @@
 <template>
   <canvas
-    class="w-screen h-screen"
     ref="canvas"
   />
 </template>
@@ -22,7 +21,7 @@ export default {
   methods: {
     render () {
       this.ctx.fillStyle = 'green';
-      this.ctx.fillRect(this.centerX(150), this.centerY(150), 150, 100);
+      this.ctx.fillRect(this.centerX(150), this.centerY(100), 150, 100);
     },
     centerX (width, center = this.cMidX) { return center - width * 0.5},
     centerY (height, center = this.cMidY) { return center - height * 0.5}
@@ -32,6 +31,7 @@ export default {
     this.ctx = canvas.getContext('2d')
     canvas.height = canvas.clientHeight
     canvas.width = canvas.clientWidth
+    this.render()
   }
 }
 </script>
