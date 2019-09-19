@@ -67,10 +67,6 @@ export default {
 </script>
 
 <style>
-  body {
-    @apply bg-orange-200;
-  }
-
   a {
     cursor: url('/cursor/arrow.png') 20 20, auto;
     @apply font-bold text-6xl leading-none text-blue-400 underline;

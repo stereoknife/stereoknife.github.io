@@ -15,7 +15,9 @@ query {
 </static-query>
 
 <style>
-
+  body {
+    @apply bg-orange-200;
+  }
 </style>
 
 <script>
