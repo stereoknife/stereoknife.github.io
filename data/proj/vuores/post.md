@@ -2,6 +2,7 @@
 image: "./thumb.png"
 links: "[app](#)[api](#)[cms](#)"
 date: 190900
+slug: "vuores-ar"
 ---
 
 # Vuores AR Blog
