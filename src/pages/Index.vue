@@ -9,8 +9,10 @@
       </a>
     </h1>
     <a href="#" class="absolute bottom-0 mb-4">About me</a>
-    <Canvas
-      class="absolute inset-0 w-screen h-screen"
+    <g-image
+      class="img absolute bottom-0 right-0"
+      :style="imgOffset()"
+      blur="0"
       :src="selectedImage"
     />
   </Layout>
@@ -52,6 +54,13 @@ export default {
   methods: {
     handleMouse (e) {
       console.log(e)
+    },
+    imgOffset: function () {
+      console.log(window.innerHeight)
+      return ({
+        marginBottom: Math.floor((Math.random() * (window.innerHeight - this.selectedImage.size.height - (31 * 2))) + 31 ) + 'px',
+        marginRight: Math.floor((Math.random() * 30) + 31) + 'px'
+      })
     }
   }
 }
@@ -77,5 +86,9 @@ export default {
 
   canvas {
     z-index: -10;
+  }
+
+  .img {
+    z-index: -10
   }
 </style>
