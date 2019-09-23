@@ -38,4 +38,11 @@ export default {
 </script>
 
 <style>
+
+  @font-face {
+    font-family: Blackletter;
+    src: url('/fonts/BLACEB__.ttf');
+    font-weight: normal;
+  }
+
 </style>
