@@ -27,22 +27,6 @@
   </div>
 </template>
 
-<page-query>
-query Post ($id: String!) {
-  post: projectPost (id: $id) {
-    title
-    content
-    slug
-    client
-    time
-    links
-    images {
-      title
-    }
-  }
-}
-</page-query>
-
 <style>
   body {
     @apply bg-secondary;
@@ -82,7 +66,7 @@ import Menu from '@/components/Menu'
 export default {
   metaInfo () {
     return {
-      title: this.$page.post.title
+      title: "about"
     }
   },
   components: {

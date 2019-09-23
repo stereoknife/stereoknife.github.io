@@ -7,7 +7,8 @@
 module.exports = {
   siteName: 'snaekomu.github.io',
   siteUrl: 'https://snaekomu.github.io',
-  pathPrefix: '/snaekomu.github.io',
+  pathPrefix: '',
+  icon: './src/favicon.gif',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',

@@ -12,7 +12,7 @@ import Menu from '@/components/Menu'
 export default {
   name: 'Index',
   metaInfo: {
-    title: 'About us'
+    title: 'index'
   },
   inject: ['setImg'],
   components: {
