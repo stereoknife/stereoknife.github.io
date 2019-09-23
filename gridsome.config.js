@@ -5,8 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'snaek',
+  siteName: 'snaekomu.github.io',
   siteUrl: 'https://snaekomu.github.io',
+  pathPrefix: '/snaekomu.github.io',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
@@ -28,11 +29,21 @@ module.exports = {
         path: 'proj/*/post.md',
         typeName: 'ProjectPost',
         route: '/:slug',
-        baseDir: 'data'
+        baseDir: 'data',
+        refs: {
+          images: {
+            typeName: 'Shot',
+            create: true
+          }
+        }
       }
     }
   ],
   transformers: {
-    remark: {}
+    remark: {
+      plugins: [
+        'remark-bracketed-spans'
+      ]
+    }
   }
 }
