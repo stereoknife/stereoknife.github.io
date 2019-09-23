@@ -18,7 +18,7 @@
     >
       <div class="lg:ml-16 lg:-mr-24">
         <p class="text-lg underline">Well, hello there.</p>
-        <p>My name is Ignasi Granell. I make things, all kinds of things, but mainly web stuff (fronted & node backend), cool things in Unity 3D, and attempt to do some design every now and then.</p>
+        <p>My name is Ignasi Granell. I make things, all kinds of things, but mainly web stuff (fronted &amp; node backend), cool XR (and normal R) things in Unity 3D, and attempt to do some design every now and then.</p>
         <p>These days I'm busy learning about shaders, computer graphics and Go, and working on my bachelor's thesis.</p>
         <p>If you've got anything to tell me feel free to send an email to <span class="code">ignasi.gv (at) outlook (dot) com</span></p>
       </div>
