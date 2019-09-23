@@ -1,7 +1,7 @@
 ---
 # images:
 #   - "./thumb.png"
-links: "[github](#)"
+links: "[github](https://github.com/snaekomu/snaekomu.github.io)"
 date: 190901
 slug: "this"
 title: "This Site"
