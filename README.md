@@ -1,5 +1,5 @@
 # snaekomu.github.io
 
-Made with Gridsome & Vue.js
+devel branch contains gridsome project
 
-Push to github pages using `npm run deploy`
+master branch contains compiled static site
